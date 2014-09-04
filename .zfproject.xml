@@ -13,7 +13,9 @@
         </controllerFile>
         <controllerFile controllerName="Error"/>
       </controllersDirectory>
-      <formsDirectory enabled="false"/>
+      <formsDirectory>
+        <formFile formName="Example"/>
+      </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
           <layoutScriptFile layoutName="layout"/>
@@ -31,8 +33,13 @@
             <controllerFile controllerName="StaticContentController">
               <actionMethod actionName="index"/>
             </controllerFile>
+            <controllerFile controllerName="Contact">
+              <actionMethod actionName="index"/>
+            </controllerFile>
           </controllersDirectory>
-          <formsDirectory enabled="false"/>
+          <formsDirectory>
+            <formFile formName="Contact"/>
+          </formsDirectory>
           <layoutsDirectory enabled="false"/>
           <modelsDirectory/>
           <viewsDirectory>
@@ -41,6 +48,9 @@
                 <viewScriptFile forActionName="index"/>
               </viewControllerScriptsDirectory>
               <viewControllerScriptsDirectory forControllerName="StaticContentController">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Contact">
                 <viewScriptFile forActionName="index"/>
               </viewControllerScriptsDirectory>
             </viewScriptsDirectory>
